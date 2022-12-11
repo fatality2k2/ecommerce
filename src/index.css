@@ -1,13 +1,375 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.links {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.uloflinks {
+  width: 100%;
+  display: flex;
+  margin: 1% 5% 1% 5%;
+  justify-content: center;
+  align-items: center;
+}
+.linkstyle {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+.linkstyle2 {
+  padding: 5px;
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.uloflinks li {
+  color: #4a4b4d;
+  padding: 5px;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  margin: 0% 7% 0% 7%;
+}
+.orange {
+  color: #e2342d;
+}
+
+.header {
+  height: 25px;
+  width: 100%;
+  display: flex;
+
+  justify-content: right;
+  align-items: center;
+}
+.ulofheader {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  margin-right: 3%;
+}
+.ulofheader li {
+  margin-left: 50px;
+
+  list-style: none;
+  color: #4a4b4d;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.orange {
+  color: #e2342d;
+}
+.content1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 100px;
+}
+.texts {
+  width: 50%;
+  height: 100%;
+}
+.texts h1 {
+  color: #3a408c;
+  width: 400px;
+  text-align: left;
+  margin-left: 30%;
+}
+.texts p {
+  width: 400px;
+  margin-left: 30%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.texts p label {
+  font-weight: bold;
+}
+.buttonofc1 {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  margin-top: 20px;
+  margin-right: 15%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.chineseimage {
+  height: 400px;
+  margin-left: 23%;
+  width: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .content1 {
+    display: block;
+    margin: 0 auto;
+  }
+  .linkstyle {
+    margin-left: 2px;
+    padding: 2px;
+    font-size: 13px;
+  }
+  .linkstyle2 {
+    padding: 2px;
+    font-size: 20px;
+  }
+  .buttonofc1 {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+
+    margin-left: 40%;
+
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .chineseimage {
+    height: 400px;
+
+    margin-left: 15%;
+    width: auto;
+  }
+  .texts p {
+    width: 400px;
+    margin-left: 30%;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .uloflinks {
+    margin-left: 30%;
+  }
+}
+
+.box-grid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.servicesText {
+  font-family: "pooppins";
+  font-size: 45px;
+  text-align: left;
+  color: #3a408c;
+}
+.servicesBorder {
+  height: 450px;
+  background-color: #f8f8f8;
+}
+.servicesAltText {
+  font-family: "pooppinsmedium";
+  font-size: 15px;
+  text-align: left;
+  color: grey;
+}
+.servicesBorder button {
+  background-color: #e2342d;
+  border-style: none;
+  padding: 15px;
+  width: 180px;
+  color: white;
+}
+.someGuyImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+.someGuyImage {
+  width: 70%;
+}
+.boxNewProducts {
+  font-size: 45px;
+  height: 100px;
+  font-family: "pooppins";
+  color: #e2342d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxNewProductsSpan2 {
+  margin-left: 11px;
+  color: #004197;
+}
+.imageProduct {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.imageBoxProduct {
+  height: 400px;
+  margin: 0px 10px 0px 10px;
+  background-color: #f8f8f8;
+}
+.titleNewProduct {
+  font-family: "pooppins";
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-grid a:link {
+  text-decoration: none;
+  color: black;
+}
+.box-grid a:visited {
+  text-decoration: none;
+  color: black;
+}
+.box-grid a:hover {
+  text-decoration: none;
+  color: #e2342d;
+}
+.box-grid a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.weeklyDiscover {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.boxWeeklyProducts {
+  font-size: 25px;
+  height: 15%;
+  font-family: "pooppins";
+  color: #e2342d;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.boxWeeklyProducts2 {
+  margin-left: 11px;
+  color: #4a4b4d;
+}
+.boxWeeklyProducts button {
+  font-size: 15px;
+  background-color: #e2e3e6;
+  border-style: none;
+  padding: 10px;
+  width: 150px;
+  color: grey;
+}
+
+.weeklyImage {
+  width: 70%;
+}
+.weeklyImage img {
+  width: 100%;
+}
+.weeklyColumn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+.weeklyImageBoxProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  margin: 0px 20px 0px 20px;
+  background-color: #f8f8f8;
+}
+.titleWeeklyProduct {
+  font-family: "pooppins";
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-grid-weekly a:link {
+  text-decoration: none;
+  color: black;
+}
+.box-grid-weekly a:visited {
+  text-decoration: none;
+  color: black;
+}
+.box-grid-weekly a:hover {
+  text-decoration: none;
+  color: #e2342d;
+}
+.box-grid-weekly a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.box-grid-weekly p:hover {
+  text-decoration: none;
+  color: black;
+}
+.lineThroughProduct {
+  text-decoration: line-through;
+  color: black;
+  font-family: "pooppins";
+  margin-left: 10px;
+  font-size: 15px;
+}
+.lineThroughProduct1 {
+  color: black;
+  font-family: "pooppins";
+  font-size: 15px;
+}
+.servicesBorder {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.divforabout {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.about {
+  background-color: #eeee;
+  width: 80%;
+  font-size: 20px;
+}
+.registrationbutton {
+  margin-left: 20px;
+  background-color: white;
+  cursor: pointer;
+  background-color: none;
+  border: none;
 }
